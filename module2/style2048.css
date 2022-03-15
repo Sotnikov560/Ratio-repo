@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gameBord__field {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    border: solid 30px #a4928b;
+    border-radius: 30px;
+    background-color: #a4928b;
+}
+
+.cell {
+    background-color: #d6c8c3;
+}
+
+.gameBord {
+    display: flex;
+    justify-content: center;
+}

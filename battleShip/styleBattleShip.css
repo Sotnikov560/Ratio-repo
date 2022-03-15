@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 150px 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    border-radius: 30px;
+    background-color: #8b8b8b;
+    border: solid 2px #8b8b8b;
+    border-radius: 5px;
+}
+
+.cell {
+    background-color: #c5dadd;
+}
+
+.cell_bookTitle {
+    background-color: #a9c7cc;
+    display: flex;
+    justify-content: center;
+}
+
+.cell_numbTitle {
+    background-color: #a9c7cc;
+    display: flex;
+    justify-content: center;
+}
+
+.hit {
+    background-image: url(ship.png) no-repeat center center;
+}
+
+.miss {
+    background-image: url(miss.png) no-repeat center center;
+}
