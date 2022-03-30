@@ -1,0 +1,26 @@
+let a = '' //первое число
+let b = '' //второе число
+let sign = '' //знак математической   операции
+let finish = false //дополнительна€ переменна€
+const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'] //массив,повер€ющий кака€ кнопка нажата
+const operation = ['+', '-', 'X', '/'] // массив,провер€ющий математическую операцию
+const disp = document.querySelector('.calc_screen p') //дисплей калькул€тора
+function clearAll() { //эта функци€ отвечает за св€зь с кнопкой сброса- ј— ("All clear")
+    let a = '' //первое число
+    let b = '' //второе число
+    let sign = '' //знак математической   операции
+    let finish = false //дополнительна€ переменна€
+    disp.textContent = 0
+}
+
+document.querySelector('.buttons').addEventListener = (event) => { //проверка на кликание, т.е. на кнопку ли кликнул пользователь или между
+    if (!event.target.classList.contains('.btn')) //если пользователь кликнет между, то обработчик поймает событие, выйдет из функции и ничего не пройзойдет
+        return
+    document.querySelector('.ac').addEventListener = clearAll //если нажата кнопка AC
+    disp.textContent = '' //получаем нажатую кнопку
+    const key = event.target.textContent //получаем текстовый контент нажатой кнопки, т.е. '9', '-' и т.д. и заносим его в переменную key
+    if (digit.includes(key)) { //проверка, нажата ли кнопка 0-9 или (.)
+        a += key
+        console.log(a, b, sign)
+    }
+}
