@@ -1,4 +1,4 @@
-//// задание№ 2 
+// задание№ 2 
 const basket = [100, 200, 300, 400, 500, 6]
 
 function countBasketPrice(arr) {
